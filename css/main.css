@@ -102,21 +102,52 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
+header {
+    display: flex;
+    font-family: 'Bungee Shade', cursive;
+    color: #8cece2;
+    font-size: 3em;
+    line-height: 3em;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    line-height: 1.6em;
+    color: #8cece2;
+    width: 100%;
+    padding-left:10px;
+    border: solid 1px #555;
+    box-shadow: 10px -10px 5px  rgba(140, 236, 226);
+    -moz-box-shadow: 10px -10px 5px  rgba(140, 236, 226);
+    -webkit-box-shadow: 10px -10px 5px rgba(140, 236, 226);
+    -o-box-shadow: 10px -10px 5px rgba(140, 236, 226);
+    border-radius:25px;
+   margin-bottom: 20px;
+}
+
+main span {
+    font-weight:700;
+}
 .wrapper {
 
-  font-weight: 700;
+  flex-flow: row wrap;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
 
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
 
   color: #8cece2;
   line-height: 1.5em;
@@ -130,9 +161,13 @@ body {
 }
 
 
-.div-1, .div-2 {
+#div-1, #div-2 {
     border-right: 1px solid #ccc;
     padding-right: 30px;
+}
+
+footer {
+    width: 100%;
 }
 
 
